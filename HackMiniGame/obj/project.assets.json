@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\lised\\OneDrive\\Bureau\\HackGame\\HackMiniGame\\HackMiniGame.csproj",
+      "projectUniqueName": "c:\\Users\\lised\\OneDrive\\Bureau\\HackGame\\HackGame\\HackMiniGame\\HackMiniGame.csproj",
       "projectName": "HackMiniGame",
-      "projectPath": "c:\\Users\\lised\\OneDrive\\Bureau\\HackGame\\HackMiniGame\\HackMiniGame.csproj",
+      "projectPath": "c:\\Users\\lised\\OneDrive\\Bureau\\HackGame\\HackGame\\HackMiniGame\\HackMiniGame.csproj",
       "packagesPath": "C:\\Users\\lised\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\lised\\OneDrive\\Bureau\\HackGame\\HackMiniGame\\obj\\",
+      "outputPath": "c:\\Users\\lised\\OneDrive\\Bureau\\HackGame\\HackGame\\HackMiniGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lised\\AppData\\Roaming\\NuGet\\NuGet.Config"

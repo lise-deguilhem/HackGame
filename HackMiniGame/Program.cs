@@ -10,13 +10,13 @@ class Program
 
     static void Main()
     {
-        Console.WriteLine("Hacking Minigame, by Al Sweigart al@inventwithpython.com");
-        Console.WriteLine("Find the password in the computer's memory. You are given clues after each guess.");
-        Console.WriteLine("For example, if the secret password is MONITOR but the player guessed CONTAIN,");
-        Console.WriteLine("they are given the hint that 2 out of 7 letters were correct,");
-        Console.WriteLine("because both MONITOR and CONTAIN have the letter O and N as their 2nd and 3rd letter.");
-        Console.WriteLine("You get four guesses.\n");
-        Console.WriteLine("Press Enter to begin...");
+        Console.WriteLine("Hacking Minigame");
+        Console.WriteLine("Recherchez le mot de passe dans la mémoire de l'ordinateur. Des indices vous sont donnés après chaque supposition.");
+        Console.WriteLine("Par exemple, si le mot de passe secret est MONITOR mais que le joueur a deviné CONTAIN,");
+        Console.WriteLine("vous serez informé que 2 lettres sur 7 étaient correctes,");
+        Console.WriteLine("car MONITOR et CONTAIN ont tous deux les lettres O et N comme 2e et 3e lettres.");
+        Console.WriteLine("Vous avez 4 tentatives.\n");
+        Console.WriteLine("Appuyez sur ENTER pour démarrer...");
         Console.ReadLine();
 
         List<string> gameWords = GetWords();
@@ -31,17 +31,17 @@ class Program
 
             if (playerMove == secretPassword)
             {
-                Console.WriteLine("A C C E S S   G R A N T E D");
+                Console.WriteLine("A C C E S   A U T O R I S E");
                 return;
             }
             else
             {
                 int numMatches = NumMatchingLetters(secretPassword, playerMove);
-                Console.WriteLine($"Access Denied ({numMatches}/7 correct)");
+                Console.WriteLine($"Accés Refusé ({numMatches}/7 correct)");
             }
         }
 
-        Console.WriteLine($"Out of tries. Secret password was {secretPassword}.");
+        Console.WriteLine($"Trop de tentatives. Le mot de passe était {secretPassword}.");
     }
 
     static List<string> GetWords()
@@ -149,14 +149,14 @@ class Program
     {
         while (true)
         {
-            Console.WriteLine($"Enter password: ({tries} tries remaining)");
+            Console.WriteLine($"Mot de passe: ({tries} tries remaining)");
             string guess = Console.ReadLine().ToUpper();
             if (words.Contains(guess))
             {
                 return guess;
             }
-            Console.WriteLine("That is not one of the possible passwords listed above.");
-            Console.WriteLine($"Try entering \"{words[0]}\" or \"{words[1]}\".");
+            Console.WriteLine("Ce n'est pas l'un des mots de passe possibles répertoriés ci-dessus.");
+            Console.WriteLine($"Essayer d'entrer \"{words[0]}\" or \"{words[1]}\".");
         }
     }
 }
